@@ -1,18 +1,24 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Johnny Pages</title>
-  </head>
-  <body>
-  <h1>Choose a project to view</h1>
-    <ul>
-      <li><a href="/School Final/index.html">School Final</a></li>
-      <li><a href="/Big Site/public/index.html">Big Site</a></li>
-      <li><a href="/Snake Game p5/index.html">P5 Snake Game</a></li>
-      <li><a href="/Megaman2.5/index.html">Megaman2.5</a></li>
-      <li><a href="/JS13k/index.html">JS13k Submission</a></li>
-    </ul>
-  </body>
+<html>
+	<head>
+		<title>JS13k</title>
+		<meta charset="UTF-8">
+	</head>
+	<body onkeydown="kPressed(event)" >
+		<div style="text-align: center;">
+			<canvas id="canvas" width=400 height=400 style="border:1px solid #000000;"></canvas>
+		</div>
+		<button onclick="toggleMusic()">Turn Music on/off</button><br/><br/>
+		<button onclick="playTitle()">Title</button>
+		<button onclick="playMaze()">Maze</button>
+		<button onclick="playBattle()">Battle</button>
+		<button onclick="playVictory()">Victory</button>
+		<button onclick="playBoss()">Boss</button>
+		<button onclick="playShop()">Shop</button>
+		<button onclick="playLose()">Game Over</button><br/><br/>
+		<a href="https://www.youtube.com/watch?v=zQGI-_L9OHA">Music Source</a>
+		<script src="TinyMusic.js"></script>
+		<script src="music.js"></script>
+		<script src="game.js"></script>
+	</body>
 </html>
